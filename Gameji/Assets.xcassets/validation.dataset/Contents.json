@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "validation.json",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

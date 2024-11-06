@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct GamejiApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(authVM: AuthViewModel())
+                .preferredColorScheme(.dark)
         }
     }
 }
