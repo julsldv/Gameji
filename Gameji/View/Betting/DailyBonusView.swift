@@ -54,6 +54,7 @@ struct DailyBonusView: View {
                 )
                 .padding(20)
                 .onAppear() {
+                    //Masque le bottombar au moment du daily bonus
                     globalSettings.showTabBar = false
                 }
             
