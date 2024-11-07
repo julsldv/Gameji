@@ -163,6 +163,7 @@ struct MainView: View {
                 .transition(.move(edge: .bottom))
                 .animation(.easeInOut, value: authViewModel.showDailyBonusModal)
                 .onAppear {
+                    
                     HapticManager.triggerLightImpact()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                         HapticManager.triggerHeavyImpact()

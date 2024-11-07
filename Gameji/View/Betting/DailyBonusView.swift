@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DailyBonusView: View {
     @ObservedObject var uiSettings = UiSettings.shared
-    @ObservedObject var globalSettings = GlobalSettings.shared
 
     @Binding var showDailyBonusModal: Bool
     var onCredit: () -> Void
@@ -53,10 +52,7 @@ struct DailyBonusView: View {
                         .stroke(uiSettings.customFontColor2.opacity(0.3), lineWidth: 2)
                 )
                 .padding(20)
-                .onAppear() {
-                    //Masque le bottombar au moment du daily bonus
-                    globalSettings.showTabBar = false
-                }
+
             
         }
       
