@@ -39,7 +39,6 @@ struct DailyBonusView: View {
                     ButtonLargeView(textButton: "Ok merci !") {
                         onCredit()
                         playHapticLoop()
-                        globalSettings.showTabBar = true
                     }
                     .padding(20)
   
