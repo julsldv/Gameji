@@ -47,7 +47,7 @@ struct SportsListView: View {
                 }
                 .padding(.horizontal, 20)
             }
-            
+            .frame(maxWidth: .infinity)
             Spacer()
             
             // Bouton de fermeture en bas
